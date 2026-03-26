@@ -1,6 +1,4 @@
-/* =========================
-   RESET + BASE
-========================= */
+
 
 * {
     margin: 0;
@@ -19,17 +17,11 @@ body {
     line-height: 1.6;
 }
 
-
-/* Responsive Images */
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-
-/* Container */
 
 .container {
     width: 90%;
@@ -37,9 +29,7 @@ img {
     margin: auto;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/*NAVBAR*/
 
 .navbar {
 
@@ -59,15 +49,9 @@ img {
     z-index: 1000;
 }
 
-
-/* Logo */
-
 .logo img {
     height: 3rem;
 }
-
-
-/* Nav Links */
 
 .nav-links {
 
@@ -96,18 +80,12 @@ img {
     transition: 0.3s;
 }
 
-
-/* Active */
-
 .nav-links a.active {
 
     background: #2b7cff;
 
     color: white;
 }
-
-
-/* Hover */
 
 .nav-links a:hover {
 
@@ -116,15 +94,11 @@ img {
     color: #2b7cff;
 }
 
-/*SERVICES HERO*/
-
 .services-hero {
 
     padding: 7vw 5vw;
 
     text-align: center;
-
-    /* Blue gradient like screenshot */
 
     background: linear-gradient(
         to right,
@@ -162,9 +136,7 @@ img {
 
 }
 
-/* =========================
-   FEATURES BAR
-========================= */
+/*FEATURES BAR*/
 
 .features-bar {
 
@@ -180,9 +152,6 @@ img {
     margin-top: -3rem;
 
 }
-
-
-/* Feature Card */
 
 .feature {
     margin-top: 1rem;
@@ -208,9 +177,6 @@ img {
 
 }
 
-
-/* Hover Effect */
-
 .feature:hover {
 
     transform: translateY(-0.4rem);
@@ -219,9 +185,6 @@ img {
         0 1.2rem 2rem rgba(0,0,0,0.15);
 
 }
-
-
-/* Icon Box */
 
 .feature-icon {
 
@@ -249,17 +212,11 @@ img {
 
 }
 
-
-/* Icon */
-
 .feature-icon i {
 
     font-size: 1.4rem;
 
 }
-
-
-/* Text */
 
 .feature-text h3 {
 
@@ -278,9 +235,7 @@ img {
 
 }
 
-/* =========================
-   SERVICE LIST SECTION
-========================= */
+/*SERVICE LIST SECTION*/
 
 .service-list {
 
@@ -294,11 +249,7 @@ img {
 
 }
 
-
-
-/* =========================
-   SERVICE CARD
-========================= */
+/*SERVICE CARD*/
 
 .service-detail {
 
@@ -323,9 +274,6 @@ img {
 
 }
 
-
-/* Hover Lift */
-
 .service-detail:hover {
 
     transform: translateY(-0.4rem);
@@ -334,12 +282,6 @@ img {
         0 1.5rem 2.5rem rgba(0,0,0,0.15);
 
 }
-
-
-
-/* =========================
-   IMAGE STYLING
-========================= */
 
 .service-detail img {
 
@@ -353,12 +295,6 @@ img {
 
 }
 
-
-
-/* =========================
-   TEXT CONTENT
-========================= */
-
 .service-info {
 
     padding: 2rem;
@@ -367,10 +303,6 @@ img {
 
 }
 
-
-
-/* Title */
-
 .service-info h2 {
 
     font-size: clamp(1.4rem, 2vw, 1.8rem);
@@ -378,10 +310,6 @@ img {
     font-weight: 700;
 
 }
-
-
-
-/* Subtitle */
 
 .subtitle {
 
@@ -393,10 +321,6 @@ img {
 
 }
 
-
-
-/* Description */
-
 .service-info p {
 
     color: #555;
@@ -405,11 +329,7 @@ img {
 
 }
 
-
-
-/* =========================
-   FEATURE LIST
-========================= */
+/*FEATURE LIST*/
 
 .service-info ul {
 
@@ -418,8 +338,6 @@ img {
     padding-left: 0;
 
 }
-
-
 
 .service-info li {
 
@@ -435,10 +353,6 @@ img {
 
 }
 
-
-
-/* Green Bullet */
-
 .service-info li::before {
 
     content: "";
@@ -452,12 +366,7 @@ img {
     border-radius: 50%;
 
 }
-
-
-
-/* =========================
-   FOOTER AREA
-========================= */
+/*FOOTER AREA*/
 
 .service-footer {
 
@@ -475,10 +384,6 @@ img {
 
 }
 
-
-
-/* Price */
-
 .service-footer span {
 
     font-weight: 600;
@@ -486,12 +391,6 @@ img {
     color: #1a1a1a;
 
 }
-
-
-
-/* =========================
-   BUTTON STYLING
-========================= */
 
 .service-footer .btn {
 
@@ -511,10 +410,6 @@ img {
 
 }
 
-
-
-/* Button Hover */
-
 .service-footer .btn:hover {
 
     background: #1f5ed6;
@@ -523,9 +418,7 @@ img {
 
 }
 
-/* =========================
-   CTA SECTION
-========================= */
+/*CTA SECTION*/
 
 .cta {
 
@@ -537,8 +430,6 @@ img {
 
     margin: 5vw;
 
-    /* Blue Gradient */
-
     background: linear-gradient(
         135deg,
         #2b7cff,
@@ -549,10 +440,6 @@ img {
 
 }
 
-
-
-/* CTA Heading */
-
 .cta h2 {
 
     font-size: clamp(1.8rem, 3vw, 2.5rem);
@@ -560,10 +447,6 @@ img {
     font-weight: 700;
 
 }
-
-
-
-/* CTA Text */
 
 .cta p {
 
@@ -574,10 +457,6 @@ img {
     opacity: 0.9;
 
 }
-
-
-
-/* CTA Button */
 
 .cta .btn {
 
@@ -601,10 +480,6 @@ img {
 
 }
 
-
-
-/* Button Hover */
-
 .cta .btn:hover {
 
     transform: translateY(-0.2rem);
@@ -614,9 +489,7 @@ img {
 
 }
 
-/* =========================
-   FOOTER
-========================= */
+/*FOOTER*/
 
 .footer {
 
@@ -634,10 +507,6 @@ img {
 
 }
 
-
-
-/* Footer Grid */
-
 .footer-grid {
 
     display: grid;
@@ -649,10 +518,6 @@ img {
 
 }
 
-
-
-/* Footer Titles */
-
 .footer h3,
 .footer h4 {
 
@@ -662,10 +527,6 @@ img {
 
 }
 
-
-
-/* Footer Text */
-
 .footer p {
 
     color: #cbd5e1;
@@ -673,12 +534,6 @@ img {
     line-height: 1.6;
 
 }
-
-
-
-/* =========================
-   FOOTER LINKS
-========================= */
 
 .footer-links {
 
@@ -705,10 +560,6 @@ img {
     transition: 0.3s ease;
 
 }
-
-
-
-/* Link Hover */
 
 .footer-links a:hover {
 
