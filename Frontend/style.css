@@ -875,6 +875,11 @@ section {
 
 }
 
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
 .copyright{
     text-align: center;
 }

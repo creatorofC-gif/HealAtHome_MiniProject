@@ -82,16 +82,22 @@ section {
 .cart-hero {
     padding: 3rem 5vw;
     text-align: center;
-    background: linear-gradient(to right, #a7c7f8, #d2deef);
+    background-image: url("images/hat4.jpg");
+    background-size: cover;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart-hero h1 {
     font-size: 2.5rem;
+    color: white;
 }
 
 .cart-hero p {
     margin-top: 0.5rem;
-    color: #555;
+    color: white;
 }
 
 /* =========================
