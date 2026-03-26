@@ -98,12 +98,8 @@ img {
 
     text-align: center;
 
-    background: linear-gradient(
-        to right,
-        #a7c7f8,
-        #d2deef
-    );
-
+    background-image: url("images/hat2.jpg");
+    background-size: cover;
 }
 
 .products-hero h1 {
@@ -112,7 +108,7 @@ img {
 
     font-weight: 700;
 
-    color: #1a1a1a;
+    color: white;
 
 }
 

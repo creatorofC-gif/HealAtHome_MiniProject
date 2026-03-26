@@ -100,11 +100,9 @@ img {
 
     text-align: center;
 
-    background: linear-gradient(
-        to right,
-        #a7c7f8,
-        #d2deef
-    );
+    background-image: url("images/hat1.jpg");
+
+    background-size: cover;
 
 }
 
