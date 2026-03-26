@@ -17,6 +17,7 @@ body {
     background-color: #f5f9ff;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
@@ -28,6 +29,11 @@ img {
     display: block;
 }
 
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
 
 /* Container */
 
@@ -57,6 +63,7 @@ img {
     top: 0;
 
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 
@@ -76,6 +83,7 @@ img {
     display: flex;
 
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 
@@ -141,7 +149,7 @@ img {
 
 .hero-left {
 
-    flex: 1 1 25rem;
+    flex: 1 1 400px;
 }
 
 
@@ -221,7 +229,7 @@ img {
 
 .hero-right {
 
-    flex: 1 1 25rem;
+    flex: 1 1 400px;
 
     display: flex;
 
@@ -231,11 +239,13 @@ img {
 
 .hero-right img {
 
-    width: 85%;
+    width: 100%;
 
     border-radius: 1.5rem;
 
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+
+    max-width: 400px;
 }
 
 /*SERVICES:-*/
@@ -867,4 +877,84 @@ img {
 
 .copyright{
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 3rem 5vw;
+        gap: 2rem;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: 1 1 100%;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        margin-right: 0;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .services-grid,
+    .why-grid,
+    .testimonial-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn,
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-card,
+    .why-card,
+    .testimonial-card {
+        padding: 1.5rem;
+    }
 }

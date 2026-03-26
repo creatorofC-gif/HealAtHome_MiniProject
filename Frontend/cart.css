@@ -12,6 +12,13 @@ body {
     font-family: "Segoe UI", sans-serif;
     background-color: #f5f9ff;
     color: #333;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* =========================
@@ -28,6 +35,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -44,6 +52,7 @@ body {
     list-style: none;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -111,8 +120,31 @@ body {
     padding: 1rem;
     border-radius: 0.8rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+    transition: 0.3s;
+    flex-wrap:wrap;
+    gap: 1rem;
 }
 
+.cart-item:hover {
+    transform: translateY(-3px);
+}
+
+.cart-item-info h4 {
+    font-size: 1rem;
+    flex: 1 1 250px;
+}
+
+.cart-item-actions p {
+    font-weight: 500;
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-item img {
+    border: 1px solid #eee;
+    padding: 4px;
+}
 /* Item left */
 
 .cart-item-info {
@@ -261,4 +293,68 @@ body {
 .copyright {
     text-align: center;
     margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .cart-item {
+        align-items: flex-start;
+    }
+
+    .cart-item-info,
+    .cart-item-actions {
+        width: 100%;
+    }
+
+    .cart-item-actions {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cart-item-actions p {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cart-buttons {
+        flex-direction: column;
+    }
+
+    .cart-buttons .btn,
+    .remove-btn {
+        width: 100%;
+    }
+
+    .cart-item-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }

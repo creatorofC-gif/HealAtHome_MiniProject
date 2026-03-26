@@ -12,6 +12,13 @@ body {
     font-family: "Segoe UI", sans-serif;
     background-color: #f5f9ff;
     color: #333;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* =========================
@@ -265,4 +272,56 @@ body {
 .copyright {
     text-align: center;
     margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 40rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .why-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section,
+    .about-section,
+    .why-us {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .btn.primary {
+        width: 100%;
+    }
 }

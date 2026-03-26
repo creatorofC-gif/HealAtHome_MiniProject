@@ -82,9 +82,9 @@ app.post('/book', async (req, res) => {
       booking: booking.rows[0],
     });
   } catch (err) {
-    console.error(err.message);
-    res.status(500).json({ error: 'Booking failed' });
-  }
+  console.error("BOOK ERROR:", err);   
+  res.status(500).json({ error: err.message });
+}
 });
 
 /*
