@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About & Contact - Healthcare Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
 
@@ -12,15 +12,14 @@
 <header class="navbar">
     <div class="logo">
         <img src="images/logo.png" alt="logo">
-        <span>HealthCare Home</span>
     </div>
 
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="products.html" class="active">Medical Supplies</a></li>
-            <li><a href="booking.html">Book</a></li>
+            <li><a href="products.html">Medical Supplies</a></li>
+            <li><a href="booking.html">Book Now</a></li>
             <li><a href="cart.html">🛒 Cart</a></li>
             <li><a href="about.html" class="active">About</a></li>
         </ul>
@@ -84,7 +83,7 @@
         </div>
 
         <!-- CONTACT FORM -->
-        <form class="contact-form">
+        <form class="contact-form" method="POST">
 
             <div class="form-group">
                 <label>Name</label>
@@ -101,7 +100,7 @@
                 <textarea name="message" rows="4" required></textarea>
             </div>
 
-            <button class="btn primary">Send Message</button>
+            <button type="submit" class="btn primary">Send Message</button>
 
         </form>
 
